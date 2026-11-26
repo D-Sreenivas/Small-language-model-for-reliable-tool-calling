@@ -1,0 +1,24 @@
+{
+  "name": "calculator",
+  "description": "Performs basic arithmetic and mathematical operations including add, subtract, multiply, divide, power, and sqrt.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "operation": {
+        "type": "string",
+        "enum": ["add", "subtract", "multiply", "divide", "power", "sqrt"],
+        "description": "The mathematical operation to perform."
+      },
+      "a": {
+        "type": "number",
+        "description": "The first operand or the single operand for sqrt."
+      },
+      "b": {
+        "type": "number",
+        "description": "The second operand (optional for sqrt)."
+      }
+    },
+    "required": ["operation", "a"]
+  }
+}
+

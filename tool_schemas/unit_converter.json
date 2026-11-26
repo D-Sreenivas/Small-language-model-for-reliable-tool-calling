@@ -1,0 +1,25 @@
+{
+  "name": "unit_converter",
+  "description": "Converts quantities between compatible measurement units (length, weight, temperature).",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "value": {
+        "type": "number",
+        "description": "Numerical magnitude to convert."
+      },
+      "from_unit": {
+        "type": "string",
+        "enum": ["celsius", "fahrenheit", "meters", "feet", "kilograms", "pounds", "kilometers", "miles"],
+        "description": "Source unit."
+      },
+      "to_unit": {
+        "type": "string",
+        "enum": ["celsius", "fahrenheit", "meters", "feet", "kilograms", "pounds", "kilometers", "miles"],
+        "description": "Destination unit."
+      }
+    },
+    "required": ["value", "from_unit", "to_unit"]
+  }
+}
+

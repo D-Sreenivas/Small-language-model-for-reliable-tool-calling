@@ -1,0 +1,71 @@
+# Environment & Secrets
+.env
+*.env
+*.key
+*.pem
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Model checkpoints & Large Binaries
+models/base_model/*
+!models/base_model/.gitkeep
+models/sft_model/*
+!models/sft_model/.gitkeep
+models/dpo_model/*
+!models/dpo_model/.gitkeep
+models/grpo_model/*
+!models/grpo_model/.gitkeep
+models/quantized/*
+!models/quantized/.gitkeep
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.gguf
+
+# Raw Large Datasets
+datasets/raw/*
+!datasets/raw/.gitkeep
+datasets/processed/*
+!datasets/processed/.gitkeep
+
+# Pickles (Keep gitkeep only)
+pickle_store/*
+!pickle_store/.gitkeep
+
+# Logs and Caches
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+wandb/
+.cache/
+

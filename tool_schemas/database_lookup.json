@@ -1,0 +1,31 @@
+{
+  "name": "database_lookup",
+  "description": "Queries a local SQLite database for customer, inventory, or order records using specific filters.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "table": {
+        "type": "string",
+        "enum": ["customers", "inventory", "orders"],
+        "description": "Database table name to query."
+      },
+      "query_field": {
+        "type": "string",
+        "description": "Column name to filter against."
+      },
+      "query_value": {
+        "type": "string",
+        "description": "Exact match filter value."
+      },
+      "limit": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 50,
+        "default": 5,
+        "description": "Maximum number of rows to return."
+      }
+    },
+    "required": ["table", "query_field", "query_value"]
+  }
+}
+
