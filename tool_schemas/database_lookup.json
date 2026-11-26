@@ -6,7 +6,11 @@
     "properties": {
       "table": {
         "type": "string",
-        "enum": ["customers", "inventory", "orders"],
+        "enum": [
+          "customers",
+          "inventory",
+          "orders"
+        ],
         "description": "Database table name to query."
       },
       "query_field": {
@@ -25,7 +29,10 @@
         "description": "Maximum number of rows to return."
       }
     },
-    "required": ["table", "query_field", "query_value"]
+    "required": [
+      "table",
+      "query_field",
+      "query_value"
+    ]
   }
 }
-

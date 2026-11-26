@@ -10,7 +10,12 @@
       },
       "category": {
         "type": "string",
-        "enum": ["general", "news", "documentation", "products"],
+        "enum": [
+          "general",
+          "news",
+          "documentation",
+          "products"
+        ],
         "default": "general",
         "description": "Category domain of search."
       },
@@ -22,7 +27,8 @@
         "description": "Number of relevant search hits to produce."
       }
     },
-    "required": ["query"]
+    "required": [
+      "query"
+    ]
   }
 }
-
